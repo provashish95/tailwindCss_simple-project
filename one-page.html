@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <main class="my-6 mx-5">
+    <div class="md:grid grid-rows-3 grid-flow-col gap-2">
+      <!-- Left side start here.... -->
+      <div class="row-span-3 grid gap-2">
+        <div class="bg-red-300 flex justify-center items-center h-40 border-1 border-red-950">Profile </div>
+        <div class="bg-red-300 flex justify-center items-center h-40 border-1 border-blue-500">Websites link</div>
+      </div>
+      <!-- Left side end here.... -->
+
+      <!-- Right  side header start here.... -->
+      <div class="col-span-2 bg-cyan-900 border-red-600 border-1 text-white my-2 md:my-0 flex items-center">This is %
+        section of
+        player</div>
+      <!-- Right  side header end here.... -->
+
+      <div class="row-span-2 col-span-2 md:grid md:grid-cols-2 md:gap-2 ">
+        <div class="bg-red-300 flex justify-center items-center  border-1 border-blue-500 h-56">Rate Your Celebrity
+        </div>
+        <div class="bg-red-300 flex justify-center items-center  border-1 border-blue-500 h-56 mt-2 md:mt-0">Ranks in
+          Other
+          Categories</div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
